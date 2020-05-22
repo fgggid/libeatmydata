@@ -52,7 +52,7 @@ rm -fr %{buildroot}
 * Fri Jul 26 2013 Jaroslav Kortus <jkortus@redhat.com> - 82-1
 - Version 82, bug fix release
 - spec file changed to meet fedora packaging guidelines
-* Fri May 18 2013 Stewart Smith <stewart@flamingspork.com> - 79
+* Sat May 18 2013 Stewart Smith <stewart@flamingspork.com> - 79
 - Version 79, bug fix release
 * Fri Mar 08 2013 Alexey Bychko <alexey.bychko@percona.com> - 0.1
 - Version 0.1, initial package for RPM-based systems

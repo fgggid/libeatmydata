@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-export PROJECT=eatmydata
+export PROJECT=libeatmydata
 #
 show_help(){
         echo -e "Wrong ARG: \033[00;31m$1\033[00m"
@@ -76,6 +76,7 @@ fi
 mTMPDIR=/var/tmp/${PROJECT}-${EMD_VERSION}
 rm -fr ${mTMPDIR}
 mkdir -p ${mTMPDIR}
+cp -f ${WORKSPACE}/README.md ${WORKSPACE}/README
 cp -a ${WORKSPACE}/* ${mTMPDIR}
 cd /var/tmp && tar --exclude=.bzr -czf ${RPMBUILD}/SOURCES/${PROJECT}-${EMD_VERSION}.tar.gz ${PROJECT}-${EMD_VERSION}
 rm -fr ${mTMPDIR}
